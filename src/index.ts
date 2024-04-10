@@ -27,8 +27,4 @@ server.listen(4000, () => {
   console.log('Visit http://localhost:4000/graphql');
 });
 
-const a = await new Promise((resolve) => {
-  setTimeout(() => {
-    resolve('a');
-  }, 1000);
-})
+const a = await new Promise(() => setTimeout(() => {}, 1000));
